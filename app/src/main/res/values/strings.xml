@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="hint_value">0.0</string>
+    <string name="mass_is_empty">Please provide value.</string>
+    <string name="mass_kg">Mass [kg]:</string>
+    <string name="mass_lbs">Mass [lbs]:</string>
+    <string name="mass_small">Entered mass is too small.</string>
+    <string name="mass_big">Entered mass is too big.</string>
+    <string name="count_bmi">Count BMI</string>
+    <string name="empty_value">0.00</string>
+    <string name="height_is_empty">Please provide value.</string>
+    <string name="height_cm">Height [cm]:</string>
+    <string name="height_in">Height [in]:</string>
+    <string name="height_small">Entered height is too small.</string>
+    <string name="height_big">Entered height is too big.</string>
+    <string name="no_bmi">You need to calculate BMI first.</string>
+    <string name="switch_units">Switch units</string>
+    <string name="show_history">Show history</string>
+    <string name="normal_desc">You have a healthy weight, which minimizes the risks of suffering from various diseases and provices a better quality of life. Keep it up!</string>
+    <string name="underweight_desc">You are underweight, which can be a sign of an underlying disease. It can also cause other health problems, like anemia or a weakened immune system.</string>
+    <string name="overweight_desc">You are overweight, which means that you have an increased risk of suffering a stroke or a heart disease. Consider losing weight to improve your quality of life.</string>
+    <string name="obese_desc">You are obese, which can lead to chronic diseases like diabetes, cancer or high blood pressure and may result in death. Try to change it before it\'s too late.</string>
+    <string name="weight_label">Weight:</string>
+    <string name="height_label">Height:</string>
+    <string name="kg_short">kg</string>
+    <string name="cm_short">cm</string>
+    <string name="lbs_short">lbs</string>
+    <string name="in_short">in</string>
+    <string name="empty_history_text">Calculate some BMIs for them to appear here!</string>
+    <string name="bmi_hint">Click the BMI value to find out more!</string>
+</resources>
