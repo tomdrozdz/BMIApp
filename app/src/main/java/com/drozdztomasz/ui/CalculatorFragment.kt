@@ -28,7 +28,7 @@ class CalculatorFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = CalculatorFragmentBinding.inflate(layoutInflater)
 
         val application = requireNotNull(this.activity).application
@@ -60,6 +60,7 @@ class CalculatorFragment : Fragment() {
         return when (item.itemId) {
             R.id.switch_units -> {
                 viewModel.switchCalculators()
+                resetState()
                 true
             }
             R.id.show_history -> {
@@ -69,6 +70,14 @@ class CalculatorFragment : Fragment() {
                 true
             }
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun resetState() {
+        binding.apply {
+            heightET.text.clear()
+            massET.text.clear()
+            bmiClickTV.visibility = View.INVISIBLE
         }
     }
 
@@ -107,9 +116,6 @@ class CalculatorFragment : Fragment() {
         }
 
         binding.apply {
-            heightET.text.clear()
-            massET.text.clear()
-            bmiClickTV.visibility = View.INVISIBLE
             heightTV.text = getString(heightText)
             massTV.text = getString(massText)
         }
@@ -176,8 +182,9 @@ class CalculatorFragment : Fragment() {
             return
         }
 
+        val bmi = requireNotNull(viewModel.bmi.value)
         val action =
-            CalculatorFragmentDirections.actionCalculatorFragmentToDescriptionFragment(viewModel.bmi.value!!.toFloat())
+            CalculatorFragmentDirections.actionCalculatorFragmentToDescriptionFragment(bmi.toFloat())
         view.findNavController().navigate(action)
     }
 }

@@ -24,14 +24,14 @@ class CalculatorViewModel(dataSource: BMIDatabaseDao, val defaultTvColor: Int) :
         get() = _bmi
 
     fun calculate(mass: Double, height: Double) {
-        val calculator = requireNotNull(_calculator.value)
+        val calculator = requireNotNull(calculator.value)
         val bmi = calculator.count(mass, height)
         _bmi.value = bmi
         viewModelScope.launch { saveMeasurement(bmi, mass, height, calculator) }
     }
 
     fun switchCalculators() {
-        _calculator.value = if (_calculator.value is NormalCalculator.Companion) {
+        _calculator.value = if (calculator.value is NormalCalculator.Companion) {
             AmericanCalculator
         } else {
             NormalCalculator
@@ -60,9 +60,5 @@ class CalculatorViewModel(dataSource: BMIDatabaseDao, val defaultTvColor: Int) :
                 units
             )
         )
-
-        // what to do with this?
-        //while (measurements.size > MAX_HISTORY_SIZE)
-        //    measurements.removeLast()
     }
 }

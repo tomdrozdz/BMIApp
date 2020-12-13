@@ -3,7 +3,6 @@ package com.drozdztomasz.ui.history
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.drozdztomasz.database.BMIDatabaseDao
-import com.drozdztomasz.ui.CalculatorViewModel
 
 class HistoryViewModelFactory(private val dataSource: BMIDatabaseDao) :
     ViewModelProvider.Factory {

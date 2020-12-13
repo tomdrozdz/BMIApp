@@ -6,10 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat.getColor
 import androidx.core.content.ContextCompat.getDrawable
-import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
-import androidx.navigation.navArgs
 import com.drozdztomasz.R
 import com.drozdztomasz.calculators.OBESE_THRESHOLD
 import com.drozdztomasz.calculators.OVERWEIGHT_THRESHOLD
@@ -20,10 +18,10 @@ class DescriptionFragment : Fragment() {
     private lateinit var binding: DescriptionFragmentBinding
 
     override fun onCreateView(
-		inflater: LayoutInflater,
-		container: ViewGroup?,
-		savedInstanceState: Bundle?
-	): View? {
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         binding = DescriptionFragmentBinding.inflate(layoutInflater)
 
         val args: DescriptionFragmentArgs by navArgs()
