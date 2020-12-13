@@ -1,4 +1,4 @@
-package com.example.bmicalculating
+package com.drozdztomasz.calculators
 
 const val UNDERWEIGHT_THRESHOLD: Double = 18.5
 const val OVERWEIGHT_THRESHOLD: Double = 25.0

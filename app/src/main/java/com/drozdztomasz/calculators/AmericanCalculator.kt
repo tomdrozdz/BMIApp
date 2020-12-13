@@ -1,4 +1,4 @@
-package com.example.bmicalculating
+package com.drozdztomasz.calculators
 
 class AmericanCalculator {
     companion object : ConstraintCalculator() {

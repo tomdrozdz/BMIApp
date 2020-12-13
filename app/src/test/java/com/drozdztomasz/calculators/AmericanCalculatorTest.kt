@@ -1,7 +1,7 @@
-package com.example.bmiapp
+package com.drozdztomasz.calculators
 
-import com.example.bmicalculating.AmericanCalculator
-import com.example.bmicalculating.BMICalculator
+import com.drozdztomasz.calculators.AmericanCalculator
+import com.drozdztomasz.calculators.BMICalculator
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.data.blocking.forAll

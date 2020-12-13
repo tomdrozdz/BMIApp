@@ -1,4 +1,4 @@
-package com.example.bmicalculating
+package com.drozdztomasz.calculators
 
 import java.lang.IllegalArgumentException
 
